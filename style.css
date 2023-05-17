@@ -7,7 +7,7 @@
 }
 body
 {
-    background: rgb(27, 22, 99);
+    background: rgb(134, 130, 184);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body
 }
 .container
 {
-    display: flex;
+    position: relative;
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
@@ -33,77 +33,78 @@ body
 }
 .container .right_slide
 {
-    display: flex;
-    background: #aca6a6;
-    padding: 40px;
-}
-.line
-{
-    text-align: right;
-    margin: 80px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    color: black;
-    
-}
-.top
-{
-    width: 1px;
-    background-color: black;
-    margin-top: 35%;
-    margin-left: 10px;
-}
-.line1
-{
-    text-align: right;
-    margin: 80px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    color: black;
-    
-}
-.top1
-{
-    width: 100%;
-    background-color: black;
-    margin-top: 10px;
+    position: relative;
+    background: #fff;
+    padding: 35px;
 }
 .profiltext
 {
-    
-    flex-direction: column;
-    /* align-items: center; */
-    padding-bottom: 20px;
-    border-bottom: 3px solid rgba(255, 255,255, 0.2);
-    padding-left: 70px;
+    position: relative;
+    display: flex;
+   flex-direction: column; 
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: solid 2px black;
 }
 .profiltext h2
 {
-    padding-left: 10px;
-    margin-left:  70px;
-
+    color: black;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
 }
-
-.box{
-    position: relative;
-}
-.title1{
-    display: flex;
-    padding-left: -100px;
-}
-
 .profiltext h2 span
 {
     font-size: 0.8em;
-    font-weight: 300;
+    font-weight: 350;
+}
+.exp
+{
+    position: relative;
+    padding-left: 21px;
+    margin-top: 16px; 
+    border-left: solid 2px black;
+}
+.rond, .rond2,.rond3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3B4B5B;
+} 
+.rond{
+    top: -6px;
+    left: -22px;
+}
+.rond2{
+    bottom: -41px;
+    left: -21px;
+}
+.rond3{
+    bottom: 45px;
+    left: -25px;
+}
+.methodes{
+    border-left: solid 2px black;
+    margin-top: 18px;
+    padding-left: 17px;
+    position: relative;
+}
+.exp h5
+{
+    margin-top: 13px; 
 }
 .profile-img
 {
+    display: flex;
     height: 180px;
     width: 180px;
     background-color: #ddd;
     border-radius: 50%;
-    margin-left: 80%;
+    margin-left: 60px;
     border: 1px solid #358D93;
     box-shadow: 6px 7px 9px 5px #358D93;
 }
@@ -143,16 +144,38 @@ body
     margin-top: 25px;
     margin-bottom: 20px;
 }
-.contactinfo ul
+.h3-title
+{
+    text-transform: uppercase;
+    font-family: serif;
+    border-bottom: solid 2px black;
+    margin-top: 10px;
+}
+.h5-title
+{
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.para-ul{
+    font-size: 12px;
+    margin-left: 18px;
+}
+.competances{
+     border-left: solid 2px black;
+    padding-left: 21px;
+} 
+.contactinfo li
 {
     position: relative;
+    list-style: none;
 }
-.contactinfo ul li .icon
+.contactinfo  li .icon
 {
     display:inline-block;
     width: 30px;
     font-size: 18px;
-    color: indigo;
+    color: rgb(219, 223, 231);
 }
 .contactinfo ul li .text
 {
@@ -177,14 +200,12 @@ body
     height: .4rem;
     background-color: #2f81ed5b;
     position: relative;
-    border-radius: 12px;
 }
 .progress{
     height: 100%;
     position: absolute;
     left: 0;
-    background-color: #2D9CDB;
-    border-radius: 12px;
+    background-color: #358D93;
 }
 .php-progress{
     width: 70%;
@@ -203,7 +224,6 @@ body
     height: .4rem;
     background-color: #2f81ed5b;
     position: relative;
-    border-radius: 12px;
 }
 .bl-progress{
     width: 70%;
@@ -231,12 +251,6 @@ body
 .md-progress{
     width: 40%;
 }
-.mo-progress{
+.po-progress{
     width: 40%;
-}
-.para
-{
-    color: #fff;
-    font-weight: 300;
-    margin-bottom: 10px;
 }
